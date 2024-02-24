@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR实景/VR Real Scene</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f0f0f0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+        }
+
+        header {
+          background-color: #EC5B5D;
+          color: #fff;
+          text-align: center;
+          padding: 5px;
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+
+        main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            margin-right:auto;
+            margin-left:auto;
+        }
+
+        img {
+            max-width: 100%; /* 图片宽度自适应 */
+            height: auto; /* 保持原始高度比例 */
+            display: block;
+            margin: 0 auto;
+        }
+
+        .row {
+          display: flex;
+        }
+
+        .column {
+          flex: 1; /* Each column takes up equal width */
+          padding: 2px;
+        }
+
+        button {
+            width: 100%; /* Button takes up 100% of the column */
+            height: auto; /* Maintain original aspect ratio of the image */
+            padding: 5px;
+            margin: 2px;
+            font-size: 15px;
+            color: white; /* Change text color to red */
+            background-color: #EC5B5D; /* Change button background to white */
+            border: none;
+            border-radius: 20px; /* Corrected typo: '20x' to '20px' */
+            overflow: hidden;
+            cursor: pointer;
+            box-sizing: border-box;
+
+        }
+
+        footer {
+            background-color: #EC5B5D;
+            color: #fff;
+            text-align: center;
+            padding: 2px;
+            font-size: 12px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Slideshow container styles */
+            .slideshow-container {
+              max-width: 250px;
+              height: 250px;
+              position: relative;
+              margin: auto;
+              overflow: hidden; /* Hide overflow to prevent movement */
+            }
+
+            .mySlides {
+              display: none;
+              width: 100%; /* Set the width of each slide to 100% */
+            }
+
+            img.slideshow-image {
+              width: 100%;
+              height: 100%; /* Ensure the image covers the entire container */
+              object-fit: cover; /* Maintain aspect ratio while covering the container */
+            }
+
+        .active {
+          background-color: #717171;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="font-size: 18px;">VR实景/VR Real Scene</h1>
+    </header>
+
+    <section>
+        <!-- Your existing content -->
+        <img src="商标.png" alt="图片描述" width= "100%" height = "auto" >
+        <br>
+        <div class="row">
+            <div class="column">
+                <a href="https://view.yunzhanzg.com/#/panoview/50599">
+                    <button type="button">
+                        VR实景展厅<br>VR Exhibition Hall
+                    </button>
+                </a>
+            </div>
+
+            <div class="column">
+                <a href="hhttps://www.expoon.com/e/0igw3vjlrzj/panorama">
+                    <button type="button">
+                        VR工厂<br>VR Factory
+                    </button>
+                </a>
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+                <!-- Slideshow container for automatic slideshow -->
+        <div class="slideshow-container">
+            <!-- Image 1 -->
+            <div class="mySlides fade">
+
+                <img src="工厂.jpg" class="slideshow-image" style="width:100%" alt="Image 1">
+<!--                <div class="text">Caption Text</div>&lt;!&ndash;&ndash;&gt;-->
+            </div>
+
+            <!-- Image 2 -->
+            <div class="mySlides fade">
+
+                <img src="鸟瞰图.jpg" class="slideshow-image" style="width:100%" alt="Image 2">
+                <!--<div class="text">Caption Two</div>-->
+            </div>
+
+            <!-- Image 3 -->
+            <div class="mySlides fade">
+
+                <img src="未标题13-2.jpg" class="slideshow-image" style="width:100%" alt="Image 3">
+                <!--<div class="text">Caption Three</div>-->
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="仪器.jpg" class="slideshow-image" style="width:100%" alt="Image 4">
+                <!--<div class="text">Caption Three</div>-->
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="CG541.jpg" class="slideshow-image" style="width:100%" alt="Image 5">
+                <!--<div class="text">Caption Three</div>-->
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="AG63ST.jpg" class="slideshow-image" style="width:100%" alt="Image 6">
+                <!--<div class="text">Caption Three</div>-->
+            </div>
+            <div class="mySlides fade">
+
+                <img src="BG328(1).jpg" class="slideshow-image" style="width:100%" alt="Image 7">
+                <!--<div class="text">Caption Three</div>-->
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="EB260(1)X.jpg" class="slideshow-image" style="width:100%" alt="Image 8">
+                <!--<div class="text">Caption Three</div>-->
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="EB760(1)X.jpg" class="slideshow-image" style="width:100%" alt="Image 9">
+                <!--<div class="text">Caption Three</div>-->
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="离心泵.jpg" class="slideshow-image" style="width:100%" alt="Image 10">
+                <!--<div class="text">Caption Three</div>-->
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="YD52-3.JPG" class="slideshow-image" style="width:100%" alt="Image 11">
+                <!--<div class="text">Caption Three</div>-->
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="绿篱剪（2）.jpg" class="slideshow-image" style="width:100%" alt="Image 12">
+                <!--<div class="text">Caption Three</div>-->
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="1.jpg" class="slideshow-image" style="width:100%" alt="Image 13">
+                <!--<div class="text">Caption Three</div>-->
+            </div>
+
+        </div>
+
+        <!-- Dots for the slideshow -->
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 GREPO</p>
+    </footer>
+
+    <!-- JavaScript for the slideshow -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1; // Reset to 1 when it reaches the last slide
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+
+</body>
+</html>
